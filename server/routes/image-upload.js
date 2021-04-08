@@ -17,7 +17,7 @@ const s3 = new AWS.S3({
 })
 
 router.post('/image-upload', upload, (req, res) => {
-    console.log("post('/api/image-uplaod')", req.file);
+    console.log("post('/api/image-upload'", req.file);
     //params config
     const params = paramsConfig(req.file);
     //S3 fservice call
