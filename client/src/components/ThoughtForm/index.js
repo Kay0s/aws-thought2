@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const ThoughtForm = () => {
+  const fileInput = useRef(null);
   const [formState, setFormState] = useState({ username: '', thought: '' });
   const [characterCount, setCharacterCount] = useState(0);
 
