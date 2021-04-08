@@ -91,7 +91,7 @@ const ThoughtForm = () => {
             ref={fileInput}
             className="form-input p-2"
           />
-    <button type ='submit' className="btn" onClick={handleImageUpload}>
+    <button type ="submit" className="btn" onClick={handleImageUpload}>
             Upload
           </button>
         </label>
