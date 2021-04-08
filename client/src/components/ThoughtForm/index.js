@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
 
 const ThoughtForm = () => {
-  const fileInput = useRef(null);
+ 
   const [formState, setFormState] = useState({ username: '', thought: '' });
   const [characterCount, setCharacterCount] = useState(0);
+  const fileInput = useRef(null);
 
   // update state based on form input changes
   const handleChange = event => {
@@ -90,11 +91,7 @@ const ThoughtForm = () => {
             ref={fileInput}
             className="form-input p-2"
           />
-    <button
-            className="btn"
-            onClick={handleImageUpload}
-            type="submit"
-          >
+    <button type ='submit' className="btn" onClick={handleImageUpload}>
             Upload
           </button>
         </label>
